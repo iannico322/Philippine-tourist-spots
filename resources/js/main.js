@@ -47,15 +47,24 @@ next.addEventListener('click',()=>{
     if (i==framer.length) {
         i=0
 
-        bodys.src = framer[i].images
         next.style.backgroundColor = framer[i].color
+        bodys.src = framer[i].images
         next.style.pointerEvents = "none"
 
         
 
         document.body.style.backgroundImage = "url('./../media/img/mayon.jpg')";
+        threec.add('rotate')
 
-        twoc.add('rotate')
+
+
+        
+
+        setTimeout(()=>{
+            twoc.add('rotate')
+            two.src = framer[i].images
+            three.src = framer[i].images
+        },100)
         
         setTimeout(()=>{
             two.src = framer[i].images
@@ -63,16 +72,15 @@ next.addEventListener('click',()=>{
         },200)
 
         setTimeout(()=>{
-            one.src = framer[i].images
-            threec.add('rotate')
+            onec.add('rotate')
         },500)
 
         setTimeout(()=>{
             
 
-            onec.add('rotate')
+             one.src = framer[i].images
             text.textContent = framer[i].text
-            three.src = framer[i].images
+           
         },300)
 
         setTimeout(()=>{
@@ -86,7 +94,6 @@ next.addEventListener('click',()=>{
 
 
     
-
     
         
     }else{
@@ -98,8 +105,17 @@ next.addEventListener('click',()=>{
         
 
         document.body.style.backgroundImage = "url('./../media/img/mayon.jpg')";
+        threec.add('rotate')
 
-        twoc.add('rotate')
+
+
+        
+
+        setTimeout(()=>{
+            twoc.add('rotate')
+            two.src = framer[i].images
+            three.src = framer[i].images
+        },100)
         
         setTimeout(()=>{
             two.src = framer[i].images
@@ -107,16 +123,15 @@ next.addEventListener('click',()=>{
         },200)
 
         setTimeout(()=>{
-            one.src = framer[i].images
-            threec.add('rotate')
+            onec.add('rotate')
         },500)
 
         setTimeout(()=>{
             
 
-            onec.add('rotate')
+             one.src = framer[i].images
             text.textContent = framer[i].text
-            three.src = framer[i].images
+           
         },300)
 
         setTimeout(()=>{

@@ -78,7 +78,7 @@ body{
 
     80%{
         transform: rotate(360deg) scale(1.11);
-        filter: blur(10px);
+        filter: blur(6px);
     }
    
     90%{
@@ -121,7 +121,8 @@ body{
 }
 
 .rotate{
-    animation: rot 2s  ease-in-out  ;
+    animation: rot 2s cubic-bezier(0.785, 0.135, 0.15, 0.86)  ;
+    transition: 500ms ease-in-out;
     
 }
 
@@ -258,8 +259,10 @@ body{
       
         overflow: hidden;
         border-radius: 100%;
-        background-color: rgba(0, 0, 0, 0.683);
+        background-color: rgb(0, 0, 0);
         z-index: 10;
+
+      
         img{
             position: absolute;
             height: 100vh;
