@@ -48,13 +48,15 @@ next.addEventListener('click',()=>{
         i=0
 
         bodys.src = framer[i].images
-        next.style.pointerEvents = "none"
         next.style.backgroundColor = framer[i].color
+        next.style.pointerEvents = "none"
+
         
 
         document.body.style.backgroundImage = "url('./../media/img/mayon.jpg')";
 
         twoc.add('rotate')
+        
         setTimeout(()=>{
             two.src = framer[i].images
             textc.add('up')
@@ -84,6 +86,8 @@ next.addEventListener('click',()=>{
 
 
     
+
+    
         
     }else{
         i=i+1
@@ -96,6 +100,7 @@ next.addEventListener('click',()=>{
         document.body.style.backgroundImage = "url('./../media/img/mayon.jpg')";
 
         twoc.add('rotate')
+        
         setTimeout(()=>{
             two.src = framer[i].images
             textc.add('up')
