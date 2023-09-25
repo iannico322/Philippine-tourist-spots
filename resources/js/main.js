@@ -1,7 +1,7 @@
 $(window).on('load',function(){
-    $(".loading").fadeOut(4000);
+    $(".loading").fadeOut(2000);
     
-    $(".container").fadein(4000);
+    $(".container").fadein(2000);
 })
 
 const framer = [
