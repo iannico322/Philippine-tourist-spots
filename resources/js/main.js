@@ -61,27 +61,31 @@ next.addEventListener('click',()=>{
         
 
         setTimeout(()=>{
-            twoc.add('rotate')
-            two.src = framer[i].images
             three.src = framer[i].images
+        },50)
+        setTimeout(()=>{
+            
+            twoc.add('rotate')
+            
         },100)
-        
+
         setTimeout(()=>{
             two.src = framer[i].images
+        },250)
+        
+        
+        setTimeout(()=>{
+            onec.add('rotate')
+    
             textc.add('up')
         },200)
 
         setTimeout(()=>{
-            onec.add('rotate')
-        },500)
-
-        setTimeout(()=>{
-            
-
-             one.src = framer[i].images
+            one.src = framer[i].images
             text.textContent = framer[i].text
-           
-        },300)
+        },250)
+
+       
 
         setTimeout(()=>{
             onec.remove('rotate')
@@ -90,8 +94,7 @@ next.addEventListener('click',()=>{
             textc.remove('up')
             next.style.pointerEvents = "auto"
 
-        },5000)
-
+        },3000)
 
     
     
@@ -112,27 +115,31 @@ next.addEventListener('click',()=>{
         
 
         setTimeout(()=>{
-            twoc.add('rotate')
-            two.src = framer[i].images
             three.src = framer[i].images
+        },50)
+        setTimeout(()=>{
+            
+            twoc.add('rotate')
+            
         },100)
-        
+
         setTimeout(()=>{
             two.src = framer[i].images
+        },250)
+        
+        
+        setTimeout(()=>{
+            onec.add('rotate')
+    
             textc.add('up')
         },200)
 
         setTimeout(()=>{
-            onec.add('rotate')
-        },500)
-
-        setTimeout(()=>{
-            
-
-             one.src = framer[i].images
+            one.src = framer[i].images
             text.textContent = framer[i].text
-           
-        },300)
+        },250)
+
+       
 
         setTimeout(()=>{
             onec.remove('rotate')
@@ -141,7 +148,7 @@ next.addEventListener('click',()=>{
             textc.remove('up')
             next.style.pointerEvents = "auto"
 
-        },5000)
+        },3000)
 
 
     }

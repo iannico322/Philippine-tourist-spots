@@ -61,16 +61,17 @@ body {
 
 @keyframes rot {
   0% {
+    opacity: 70%;
     transform: rotate(0deg) scale(1);
     filter: blur(0px);
   }
-  80% {
-    transform: rotate(360deg) scale(1.11);
-    filter: blur(6px);
+  87% {
+    opacity: 100%;
+    transform: rotate(360deg) scale(1.16);
+    filter: blur(0px);
   }
   90% {
     transform: rotate(360deg) scale(1.01);
-    filter: blur(4px);
   }
   100% {
     filter: blur(0px);
@@ -102,12 +103,12 @@ body {
 }
 
 .rotate {
-  animation: rot 2s cubic-bezier(0.785, 0.135, 0.15, 0.86);
+  animation: rot 2s  ease-in-out;
   transition: 500ms ease-in-out;
 }
 
 .up {
-  animation: upAnim 5s cubic-bezier(0.2, 1.01, 0.48, 0.8);
+  animation: upAnim 2s cubic-bezier(0.2, 1.01, 0.48, 0.8);
 }
 
 .floats {
